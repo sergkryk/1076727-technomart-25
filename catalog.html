@@ -55,107 +55,77 @@
     <!-- закончил с крошками -->
     <section class="rock-drill">
       <h2>Перфораторы</h2>
-      <form class="sort-brand">
+      <form class="brand-filter">
+        <input type="range" min="0" max="10" list="rangeList1">
+        <datalist id="rangeList1">
+          <option value="0" label="0">
+          <option value="15000" label="15000">
+          <option value="30000" label="30000">
+        </datalist>
         <input type="checkbox" name="Bosh" id="bosh" checked>Bosh</input>
         <input type="checkbox" name="Interskol" id="interskol">Интерскол</input>
         <input type="checkbox" name="Makita" id="makita" checked>Makita</input>
         <input type="checkbox" name="Dewalt" id="dewalt">Dewalt</input>
         <input type="checkbox" name="Hitachi" id="hitachi">Hitachi</input>
-      </form>
-      <form class="sort-power-source">
         <input type="radio" name="battery" id="battery" checked>Аккумуляторные</input>
         <input type="radio" name="lined" id="lined">Сетевые</input>
       </form>
-      <div class="simple-btn">
-        <button>Показать</button>
-      </div>
-      <ul class="catalog-item">
-        <li><a href="#"><img src="image2.jpg" alt="BFG3000"></a></li>
-        <li><a href="#">
-            <h3>Перфоратор BOSCH BFG3000</h3>
-          </a></li>
-        <li>
-          <p class="price">22500 P.</p>
+      <button class="simple-btn">Показать</button>
+      <ul class="catalog-list">
+        <li class="catalog-item">
+          <img src="item1.jpg" alt="">
+          <h3>Перфоратор BOSCH BFG3000</h3>
+          <p class="price">22500 Р.</p>
+          <a class="hot-price" href="">15500 Р.</a>
         </li>
-        <li><a href="#" class="hot-price">15500 P.</a></li>
-      </ul>
-      <ul class="catalog-item">
-        <li><a href="#"><img src="image1.jpg" alt="BFG6000"></a></li>
-        <li><a href="#">
-            <h3>Перфоратор BOSCH BFG6000</h3>
-          </a></li>
-        <li>
-          <p class="price">30500 P.</p>
+        <li class="catalog-item">
+          <img src="item2.jpg" alt="">
+          <h3>Перфоратор BOSCH BFG6000</h3>
+          <p class="price">30500 Р.</p>
+          <a class="hot-price" href="">25500 Р.</a>
         </li>
-        <li><a href="#" class="hot-price">25500 P.</a></li>
-      </ul>
-      <ul class="catalog-item">
-        <li><a href="#"><img src="image3.jpg" alt="BFG2000"></a></li>
-        <li><a href="#">
-            <h3>Перфоратор BOSCH BFG2000</h3>
-          </a></li>
-        <li>
+        <li class="catalog-item">
+          <img src="item3.jpg" alt="">
+          <h3>Перфоратор BOSCH BFG2000</h3>
           <p class="price"></p>
+          <a class="hot-price" href="">12500 Р.</a>
         </li>
-        <li><a href="#" class="hot-price">12500 P.</a></li>
-      </ul>
-      <ul class="catalog-item">
-        <li><a href="#"><img src="image2.jpg" alt="BFG3000"></a></li>
-        <li><a href="#">
-            <h3>Перфоратор BOSCH BFG3000</h3>
-          </a></li>
-        <li>
-          <p class="price">22500 P.</p>
+        <li class="catalog-item">
+          <img src="item1.jpg" alt="">
+          <h3>Перфоратор BOSCH BFG3000</h3>
+          <p class="price">22500 Р.</p>
+          <a class="hot-price" href="">15500 Р.</a>
         </li>
-        <li><a href="#" class="hot-price">12500 P.</a></li>
-      </ul>
-      <ul class="catalog-item">
-        <li><a href="#"><img src="image1.jpg" alt="BFG6000"></a></li>
-        <li><a href="#">
-            <h3>Перфоратор BOSCH BFG6000</h3>
-          </a></li>
-        <li>
-          <p class="price">30500 P.</p>
+        <li class="catalog-item">
+          <img src="item2.jpg" alt="">
+          <h3>Перфоратор BOSCH BFG6000</h3>
+          <p class="price">30500 Р.</p>
+          <a class="hot-price" href="">25500 Р.</a>
         </li>
-        <li><a href="#" class="hot-price">25500 P.</a></li>
-      </ul>
-      <ul class="catalog-item">
-        <li><a href="#"><img src="image3.jpg" alt="BFG2000"></a></li>
-        <li><a href="#">
-            <h3>Перфоратор BOSCH BFG2000</h3>
-          </a></li>
-        <li>
+        <li class="catalog-item">
+          <img src="item3.jpg" alt="">
+          <h3>Перфоратор BOSCH BFG2000</h3>
           <p class="price"></p>
+          <a class="hot-price" href="">12500 Р.</a>
         </li>
-        <li><a href="#" class="hot-price">12500 P.</a></li>
-      </ul>
-      <ul class="catalog-item">
-        <li><a href="#"><img src="image2.jpg" alt="BFG3000"></a></li>
-        <li><a href="#">
-            <h3>Перфоратор BOSCH BFG3000</h3>
-          </a></li>
-        <li>
-          <p class="price">22500 P.</p>
+        <li class="catalog-item">
+          <img src="item1.jpg" alt="">
+          <h3>Перфоратор BOSCH BFG3000</h3>
+          <p class="price">22500 Р.</p>
+          <a class="hot-price" href="">15500 Р.</a>
         </li>
-        <li><a href="#" class="hot-price">15500 P.</a></li>
-      </ul>
-      <ul class="catalog-item">
-        <li><a href="#"><img src="image1.jpg" alt="BFG6000"></a></li>
-        <li><a href="#">
-            <h3>Перфоратор BOSCH BFG6000</h3>
-          </a></li>
-        <li>
-          <p class="price">30500 P.</p>
+        <li class="catalog-item">
+          <img src="item2.jpg" alt="">
+          <h3>Перфоратор BOSCH BFG6000</h3>
+          <p class="price">30500 Р.</p>
+          <a class="hot-price" href="">25500 Р.</a>
         </li>
-        <li><a href="#" class="hot-price">25500 P.</a></li>
-      </ul>
-      <ul class="catalog-item">
-        <li><a href="#"><img src="image3.jpg" alt="BFG2000"></a></li>
-        <li><a href="#">
-            <h3>Перфоратор BOSCH BFG2000</h3>
-          </a></li>
-        <li></li>
-        <li><a href="#" class="hot-price">12500 P.</a></li>
+        <li class="catalog-item">
+          <img src="item3.jpg" alt="">
+          <h3>Перфоратор BOSCH BFG2000</h3>
+          <p class="price"></p>
+          <a class="hot-price" href="">12500 Р.</a>
+        </li>
       </ul>
     </section>
   </main>
@@ -180,8 +150,8 @@
     </div>
     <div class="copyright-container">
       <div class="copyright">
-        <p>© 2010-2019 Компания "Техномарт"</p>
-        <p>Все права защищены</p>
+        <p>© 2010-2019 Компания "Техномарт"<br>
+        Все права защищены</p>
       </div>
       <ul class="social-links-list">
         <li><a href="#"><img src="vk.svg" alt="vkontakte"></a></li>
