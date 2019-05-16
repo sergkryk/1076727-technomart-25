@@ -151,7 +151,7 @@
     <div class="copyright-container">
       <div class="copyright">
         <p>© 2010-2019 Компания "Техномарт"<br>
-        Все права защищены</p>
+          Все права защищены</p>
       </div>
       <ul class="social-links-list">
         <li><a href="#"><img src="vk.svg" alt="vkontakte"></a></li>
@@ -169,3 +169,31 @@
     </div>
   </footer>
 </body>
+
+
+<form action="https://echo.htmlacademy.ru" method="post">
+  <label>Ваш пол:
+    <input type=radio name='gender' value='male'> Мужской</input>
+    <input type=radio name='gender' value='female' checked> Женский</input>
+  </label><br>
+  <label>Месяц и год рождения:<br>
+    <select>
+      <option value='january'>Январь</option>
+    </select>
+    <select>
+      <option value='1990'>1990</option>
+    </select>
+  </label><br>
+  <label>Знакомые технологии:<br>
+    <select multiple>
+      <option>HTML</option>
+      <option selected>CSS</option>
+      <option>JavaScript</option>
+      <option>Node.js</option>
+    </select>
+  </label><br>
+  <label>Фото:
+    <input type='file' name='avatar'>
+  </label>
+  <input type='submit' value='Сохранить'>
+</form>
