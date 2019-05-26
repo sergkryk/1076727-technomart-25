@@ -337,19 +337,16 @@ a {
   margin: 10px;
 }
 
-/* catalog card */
-
-/* .catalog-list {
+.catalog-list {
     margin: 0;
     padding: 0;
 
     display: flex;
     flex-wrap: wrap;
-} */
+}
 
 .catalog-item {
   margin: 20px;
-  height: 318px;
   width: 220px;
   border: 1px solid rgb(229, 229, 229);
   list-style: none;
@@ -381,6 +378,7 @@ a {
 }
 
 .hot-price {
+  display: block;
   color: rgb(255, 255, 255);
   font-family: "PT Sans", Roboto, sans-serif;
   font-size: 17px;
@@ -389,7 +387,6 @@ a {
   width: 140px;
   padding: 10px 10px;
   margin: 5px;
-  /* position: relative; */
 
   background-color: #ee3643;
 }
@@ -407,20 +404,16 @@ a {
 
 /* section about */
 
-.btn-list {
+.catalog-links {
   list-style: none;
 }
 
-.btn-list li {
-  margin: 0;
-  padding: 0;
-}
-
-.btn-buy {
+.buy-link {
   width: 135px;
   padding: 14px 40px 14px 50px;
   margin: 5px;
   box-sizing: border-box;
+  display: block;
 
   font-size: 14px;
   line-height: 18px;
@@ -434,19 +427,20 @@ a {
   border-radius: 2px;
 }
 
-.btn-buy:hover {
+.buy-link:hover {
   background: rgb(95, 187, 45) url(../img/icon-cart.svg) 10px center no-repeat;
 }
 
-.btn-buy:active {
+.buy-link:active {
   background: rgb(81, 133, 52) url(../img/icon-cart.svg) 10px center no-repeat;
 }
 
-.btn-bookmark {
+.bookmark-link {
   width: 135px;
-  padding: 14px 25px 14px 25px;
   margin: 5px;
+  display: block;
   box-sizing: border-box;
+  padding: 14px 30px;
 
   font-size: 14px;
   line-height: 18px;
@@ -460,11 +454,11 @@ a {
   border-radius: 2px;
 }
 
-.btn-bookmark:hover {
+.bookmark-link:hover {
   box-shadow: inset 0 0 0 3px rgb(50, 66, 92);
 }
 
-.btn-bookmark:active {
+.bookmark-link:active {
   color: rgba(50, 66, 92, .3);
   box-shadow: inset 0 0 0 3px rgba(50, 66, 92, .3);
 }
