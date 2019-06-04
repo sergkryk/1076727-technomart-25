@@ -157,7 +157,8 @@
       </section>
       <section class="services">
         <h2>Сервисы</h2>
-        <p>Хороший Интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши
+        <p>Хороший Интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать
+          ваши
           покупки приятными</p>
         <ul class="services-list">
           <li class="services-list-item"><button>Доставка</button></li>
@@ -253,21 +254,24 @@
     </div>
   </footer>
   <!-- форма обратной связи -->
-  <section class="site-pop-up">
+  <section class="modal write-us">
     <h2 class="visually-hidden">Напишите нам</h2>
     <form class="feedback-form" action="https://echo.htmlacademy.ru" method="GET">
-      <label>Ваше имя:
-        <input type="text" name="login" placeholder="Имя Фамилия">
-      </label>
-      <label>Ваш e-mail:
-        <input type="email" name="email" placeholder="email@example.com">
-      </label>
-      <label>Текст письма
-        <textarea name="content" cols="30" rows="10" placeholder="В свободной форме"></textarea>
-      </label>
-      <button class="btn-close" type="button" aria-label="Закрыть форму">X</button>
-      <button class="red-btn-long" type="submit">Отправить</button>
+      <div class="form-item-wrapper">
+        <label for="login-form-field" class="feedback-label">Ваше имя:</label>
+        <input id="login-form-field" type="text" name="login" placeholder="Имя Фамилия">
+      </div>
+      <div class="form-item-wrapper">
+        <label for="email-form-field" class="feedback-label">Ваш e-mail:</label>
+        <input id="email-form-field" type="email" name="email" placeholder="email@example.com">
+      </div>
+      <div class="form-item-wrapper content-form">
+        <label for="content-form-field" class="feedback-label">Текст письма:</label>
+        <textarea id="content-form-field" name="content" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+      </div>
+      <button class="red-btn" type="submit">Отправить</button>
     </form>
+    <button class="btn-close" type="button" aria-label="Закрыть форму"></button>
   </section>
   <!-- закончил форму -->
 </body>
