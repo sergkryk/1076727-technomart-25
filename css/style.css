@@ -521,6 +521,7 @@ a {
 
 .filter-list-item input[type="checkbox"]:checked + .checkbox-indicator {
   background: url(../img/checkbox-on.svg) center center no-repeat;
+  left: 2px;
 }
 .filter-list-item input[type="radio"]:checked + .radio-indicator {
   background: url(../img/radio-on.svg) center center no-repeat;
