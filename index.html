@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <!-- <script src="js/script.js"></script> -->
 </head>
 
 <body>
@@ -34,7 +35,7 @@
           <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
         <ul class="login-menu">
-          <li class="login-menu-item login-field"><a href="#">Войти</a></li>
+          <li class="login-menu-item login-field"><a class="login-field-link" href="login.html">Войти</a></li>
           <li class="login-menu-item reg-field"><a href="#">Регистрация</a></li>
         </ul>
       </div>
@@ -243,8 +244,8 @@
         <div class="company-contacts">
           <h3>Контакты</h3>
           <p>Вы можете забрать товар сами,<br> заехав в наш офис</p>
-          <a href="#"><img src="img/map.jpg" alt="г. Санкт-Петербург, ул. Большая Конюшенная, 19/8"></a>
-          <a href="#" class="red-btn">заблудились? напишите нам!</a>
+          <img class="map-popup" src="img/map.jpg" alt="г. Санкт-Петербург, ул. Большая Конюшенная, 19/8">
+          <a href="#" class="red-btn contact-btn">заблудились? напишите нам!</a>
         </div>
       </section>
     </div>
@@ -291,7 +292,7 @@
     </div>
   </footer>
   <!-- форма обратной связи -->
-  <section class="modal write-us">
+  <section class="modal support-modal">
     <h2 class="visually-hidden">Напишите нам</h2>
     <form class="feedback-form" action="https://echo.htmlacademy.ru" method="GET">
       <div class="inputs-container">
@@ -319,9 +320,62 @@
   <!-- всплывающее окно с картой -->
   <div class="section map-pop-up">
     <h2 class="visually-hidden">Мы находимся по адресу ул. Большая Конюшенная 19/2</h2>
-    <img src="/img/map-pop-up.jpg" alt="г. Санкт-Петербург, ул. Большая Конюшенная, 19/8">
+    <!-- <img src="/img/map-pop-up.jpg" alt="г. Санкт-Петербург, ул. Большая Конюшенная, 19/8"> -->
+    <iframe src="https://yandex.ru/map-widget/v1/-/CBF9nKAJWA" width="940" height="446" frameborder="0" allowfullscreen="false"></iframe>
     <button class="btn-close" type="button" aria-label="Закрыть форму"></button>
   </div>
+  <script>
+    var link = document.querySelector(".contact-btn");
+    var popup = document.querySelector(".support-modal");
+    var close = popup.querySelector(".btn-close");
+    var login = popup.querySelector("[name=login]");
+    var email = popup.querySelector("[name=email]");
+    var form = popup.querySelector(".feedback-form");
+
+    form.addEventListener("submit", function(evt) {
+      if (!login.value || !email.value) {
+        evt.preventDefault();
+        
+      }
+      evt.preventDefault();
+      console.log(login.value);
+      console.log(email.value);
+      console.log("submitting");
+    });
+
+    link.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup.classList.add("modal-show");
+      login.focus();
+      console.log("btn is pressed");
+      console.log("login is focused");
+    });
+
+    close.addEventListener("click", function(evt) {
+      evt.preventDefault();
+      popup.classList.remove("modal-show");
+      console.log("modal is closed");
+    });
+
+    
+
+  </script>
+  <script>
+    var map = document.querySelector(".map-popup");
+    var mappopup = document.querySelector(".map-pop-up");
+    var closemap = mappopup.querySelector(".btn-close");
+
+    map.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      mappopup.classList.add("modal-show");
+    });
+
+    closemap.addEventListener("click", function(evt) {
+      evt.preventDefault();
+      mappopup.classList.remove("modal-show");
+    });
+
+  </script>
 </body>
 
 </html>

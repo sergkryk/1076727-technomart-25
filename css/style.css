@@ -499,7 +499,7 @@ a {
   text-transform: uppercase;
   color: rgba(0, 0, 0, .3);
 
-  margin: 20px 0 14px 0;
+  margin: 20px 0 13px 0;
   padding: 9px 0 9px 18px;
 
   background-color: #f7f3ec;
@@ -518,6 +518,95 @@ a {
   font-family: "PT Sans", Roboto, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
+}
+
+.filter-range {
+  width: 100%;
+
+  color: #000000;
+}
+
+.range-controls {
+  width: 100%;
+  padding: 39px 20px;
+  position: relative;
+  box-sizing: border-box;
+  margin-bottom: 9px;
+
+  background-color: #f7f3ec;
+}
+
+.scale {
+  height: 2px;
+  background-color: #D7DCDE;
+}
+
+.bar {
+  height: 2px;
+  background-color: #00CA74;
+  width: 80%;
+}
+
+.range-toggle {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 30px;
+
+  background-color: #ABABAB;
+  box-shadow: inset 0 0 0 8px #ffffff;
+  border-radius: 50%;
+}
+
+.range-toggle-max  {
+  left: 150px;
+}
+
+.filter-range-title {
+  margin-bottom: 12px;
+  color: rgb(0, 0, 0);
+  font-size: 17px;
+  line-height: 30px;
+  font-family: "PT Sans", Roboto, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.price-controls {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+
+  width: 10px;
+  height: 1px;
+
+  background: #000000;
+
+  top: 50%;
+  left: 47%;
+}
+
+.price-controls input {
+  width: 75px;
+  margin: 0;
+  padding: 10px;
+
+  background-color: #f7f3ec;
+  border: none;
+
+  text-align: center;
+  font-family: "PTSans", sans-serif;
+  font-size: 17px;
+  color: #000000;
+  text-align: center;
+  line-height: 18px;
+  font-weight: 200;
 }
 
 .slider-wrapper {
@@ -1401,8 +1490,7 @@ a {
 .footer-nav-item {
   list-style: none;
   margin-top: 35px;
-  /* margin-left: 25px; */
-  margin-right: 59px;
+  margin-right: 58px;
 }
 
 .footer-nav-item:nth-of-type(5) {
@@ -1557,7 +1645,7 @@ a {
 }
 
 .cart-added {
-  top: 43vh;
+  top: 10vh;
   left: 50%;
 
   width: 620px;
@@ -1613,9 +1701,9 @@ a {
   cursor: pointer;
 }
 
-/* modal write-us */
+/* modal support-modal */
 
-.write-us {
+.support-modal {
   top: 20vh;
   left: 50%;
 
@@ -1686,6 +1774,10 @@ a {
 
 /* modal map-pop-up */
 
+.map-popup {
+  cursor: pointer;
+}
+
 .map-pop-up {
   display: none;
   width: 940px;
@@ -1693,8 +1785,18 @@ a {
   position: fixed;
   bottom: 365px;
   left: 50%;
+  box-shadow: 0 0 14px 1px rgba(47, 42, 43, .5);
+}
+
+.map-pop-up .btn-close {
+  right: -30px;
+  top: 5px;
 }
 
 .map-pop-up img {
   box-shadow: 0 0 14px 1px rgba(47, 42, 43, .5);
+}
+
+.modal-show {
+  display: block;
 }

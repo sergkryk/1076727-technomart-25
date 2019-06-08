@@ -66,12 +66,26 @@
         <div class="catalog-container">
           <form class="site-filter" action="https://echo.htmlacademy.ru" method="get">
             <p class="filter-title">фильтр:</p>
-            <fieldset class="filter-heading">
+            <!-- <fieldset class="filter-heading">
               <legend>Цена:</legend>
               <div class="slider-wrapper">
                 <input type="range" min="0" max="10">
               </div>
-            </fieldset>
+            </fieldset> -->
+            <div class="filter-range">
+              <div class="filter-range-title">цена</div>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="range-toggle range-toggle-min"></div>
+                <div class="range-toggle range-toggle-max"></div>
+              </div>
+              <div class="price-controls">
+                <input class="min-price" type="text" name="min-price" value="0">
+                <input type="text" name="max-price" value="30000">
+              </div>
+            </div>
             <fieldset class="filter-heading">
               <div class="border-bottom">
                 <legend>Производители</legend>
@@ -296,7 +310,8 @@
     <div class="product-summary">
       <div class="content-container">
         <h4>пара слов о перфораторах</h4>
-        <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче,
+        <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в
+          кирпиче,
           бетоне и камне.<br>
           Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели,
           шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут
@@ -352,9 +367,62 @@
       <a class="red-btn" href="#">
         оформить заказ
       </a>
-      <button class="white-btn" type="button">Продолжить покупки</button>
+      <button class="white-btn continue-btn" type="button">Продолжить покупки</button>
     </div>
     <button class="btn-close" aria-label="Закрыть окно"></button>
   </section>
   <!-- закончил с сообщением -->
+  <script>
+    var buyLink = document.querySelectorAll(".buy-link");
+    var buyPopup = document.querySelector(".cart-added");
+    var buyClose = buyPopup.querySelector(".btn-close");
+    var proceed = buyPopup.querySelector(".continue-btn");
+
+    buyLink[0].addEventListener("click", function (evt) {
+      evt.preventDefault();
+      buyPopup.classList.add("modal-show");
+    });
+    buyLink[1].addEventListener("click", function (evt) {
+      evt.preventDefault();
+      buyPopup.classList.add("modal-show");
+    });
+    buyLink[2].addEventListener("click", function (evt) {
+      evt.preventDefault();
+      buyPopup.classList.add("modal-show");
+    });
+    buyLink[3].addEventListener("click", function (evt) {
+      evt.preventDefault();
+      buyPopup.classList.add("modal-show");
+    });
+    buyLink[4].addEventListener("click", function (evt) {
+      evt.preventDefault();
+      buyPopup.classList.add("modal-show");
+    });
+    buyLink[5].addEventListener("click", function (evt) {
+      evt.preventDefault();
+      buyPopup.classList.add("modal-show");
+    });
+    buyLink[6].addEventListener("click", function (evt) {
+      evt.preventDefault();
+      buyPopup.classList.add("modal-show");
+    });
+    buyLink[7].addEventListener("click", function (evt) {
+      evt.preventDefault();
+      buyPopup.classList.add("modal-show");
+    });
+    buyLink[8].addEventListener("click", function (evt) {
+      evt.preventDefault();
+      buyPopup.classList.add("modal-show");
+    });
+
+    buyClose.addEventListener("click", function(evt) {
+      evt.preventDefault();
+      buyPopup.classList.remove("modal-show");
+    });
+    proceed.addEventListener("click", function(evt) {
+      evt.preventDefault();
+      buyPopup.classList.remove("modal-show");
+    });
+  </script>
 </body>
+</html>
