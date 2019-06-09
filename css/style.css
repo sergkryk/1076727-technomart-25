@@ -1080,30 +1080,31 @@ a {
   left: 0;
   width: 620px;
   background-image: url(../img/ad-card1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.ad-card::before {
-  margin-top: -20px;
-  content: "";
+.slider-btn {
   width: 22px;
   height: 40px;
-  background-image: url(../img/icon-left.svg);
   position: absolute;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.slider-left {
+  margin-top: -20px;
+  background-image: url(../img/icon-left.svg); 
   top: 50%;
   left: 25px;
-  cursor: pointer;
 }
 
-.ad-card::after {
+.slider-right {
   margin-top: -20px;
-  content: "";
-  width: 22px;
-  height: 40px;
   background-image: url(../img/icon-right.svg);
-  position: absolute;
   top: 50%;
   right: 22px;
-  cursor: pointer;
 }
 
 .ad-card-slogan {
@@ -1136,42 +1137,41 @@ a {
 
 }
 
-.ad-btn::before {
-  content: "";
-  width: 10px;
-  height: 10px;
+.slider-indicator {
   position: absolute;
+  width: 12px;
+  height: 12px;
   background-color: #ffffff;
   border-radius: 50%;
-  left: 295px;
-  bottom: 35px;
   cursor: pointer;
+  border: none;
 }
 
-.ad-btn::before {
-  content: "";
-  width: 10px;
-  height: 10px;
-  position: absolute;
+.indicator-one {
+  left: 295px;
+  bottom: 35px;
+  
+}
+
+.indicator-two {
+  left: 315px;
+  bottom: 35px;
+}
+
+.indicator-current {
   background-color: #ee3643;
-  box-shadow: inset 0 0 0 2px #ffffff;
-  border-radius: 50%;
-  left: 295px;
-  bottom: 35px;
-  cursor: pointer;
+  box-shadow: inset 0 0 0 3px #ffffff;
 }
 
-.ad-btn::after {
-  content: "";
-  width: 10px;
-  height: 10px;
-  position: absolute;
-  background-color: #ffffff;
-  border-radius: 50%;
-  right: 295px;
-  bottom: 35px;
-  cursor: pointer;
+.slider-two {
+  background-image: url(../img/ad-card2.jpg);
 }
+
+.slider-display-index {
+  z-index: 1;
+}
+
+
 
 /* section best-sellers */
 
