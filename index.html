@@ -8,7 +8,6 @@
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
-  <!-- <script src="js/script.js"></script> -->
 </head>
 
 <body>
@@ -87,27 +86,22 @@
               бесплатно
             </a>
           </li>
-          <li class="ad-card slider-one slider-display-index">
-            <div class="ad-card-slogan">
-              <h4>Дрели</h4>
-              <p>Соседям на радость!</p>
+          <li class="ad-card">
+            <div class="slider slider-one slider-current">
+              <div class="ad-card-slogan">
+                <h4>Дрели</h4>
+                <p>Соседям на радость!</p>
+              </div>
+            </div>
+            <div class="slider slider-two">
+              <div class="ad-card-slogan">
+                <h4>Перфораторы</h4>
+                <p>Настоящие мужские игрушки</p>
+              </div>
             </div>
             <button class="slider-btn slider-left"></button>
             <button class="slider-btn slider-right"></button>
-            <div class="slider-indicator indicator-one"></div>
-            <div class="slider-indicator indicator-two"></div>
-            <a class="red-btn ad-btn" href="#">
-              открыть каталог
-            </a>
-          </li>
-          <li class="ad-card slider-two">
-            <div class="ad-card-slogan">
-              <h4>Перфораторы</h4>
-              <p>Настоящие мужские игрушки</p>
-            </div>
-            <button class="slider-btn slider-left"></button>
-            <button class="slider-btn slider-right"></button>
-            <div class="slider-indicator indicator-one"></div>
+            <div class="slider-indicator indicator-one indicator-current"></div>
             <div class="slider-indicator indicator-two"></div>
             <a class="red-btn ad-btn" href="#">
               открыть каталог
@@ -349,10 +343,10 @@
     var email = popup.querySelector("[name=email]");
     var form = popup.querySelector(".feedback-form");
 
-    form.addEventListener("submit", function(evt) {
+    form.addEventListener("submit", function (evt) {
       if (!login.value || !email.value) {
         evt.preventDefault();
-        
+
       }
       evt.preventDefault();
       console.log(login.value);
@@ -368,13 +362,11 @@
       console.log("login is focused");
     });
 
-    close.addEventListener("click", function(evt) {
+    close.addEventListener("click", function (evt) {
       evt.preventDefault();
       popup.classList.remove("modal-show");
       console.log("modal is closed");
     });
-
-    
 
   </script>
   <script>
@@ -387,10 +379,43 @@
       mappopup.classList.add("modal-show");
     });
 
-    closemap.addEventListener("click", function(evt) {
+    closemap.addEventListener("click", function (evt) {
       evt.preventDefault();
       mappopup.classList.remove("modal-show");
     });
+
+  </script>
+  <script>
+    var sliders = document.querySelectorAll(".slider");
+    var arrows = document.querySelectorAll(".slider-btn");
+    var toggles = document.querySelectorAll(".slider-indicator");
+
+    toggles.forEach(function (el, index) {
+      el.addEventListener("click", function () {
+        sliders.forEach(function (el, index) {
+          if (sliders[index].classList.contains("slider-current")) {
+            sliders[index].classList.remove("slider-current");
+            toggles[index].classList.remove("indicator-current");
+          }
+        })
+
+        sliders[index].classList.add("slider-current");
+        toggles[index].classList.add("indicator-current");
+      })
+
+      arrows.forEach(function (el, index) {
+        el.addEventListener("click", function () {
+          sliders.forEach(function (el, index) {
+            if (sliders[index].classList.contains("slider-current")) {
+              sliders[index].classList.remove("slider-current");
+              toggles[index].classList.remove("indicator-current");
+            }
+          })
+          sliders[index].classList.add("slider-current");
+          toggles[index].classList.add("indicator-current");
+        })
+      })
+    })
 
   </script>
 </body>
