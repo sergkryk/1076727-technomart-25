@@ -66,12 +66,6 @@
         <div class="catalog-container">
           <form class="site-filter" action="https://echo.htmlacademy.ru" method="get">
             <p class="filter-title">фильтр:</p>
-            <!-- <fieldset class="filter-heading">
-              <legend>Цена:</legend>
-              <div class="slider-wrapper">
-                <input type="range" min="0" max="10">
-              </div>
-            </fieldset> -->
             <div class="filter-range">
               <div class="filter-range-title">цена</div>
               <div class="range-controls">
@@ -360,7 +354,6 @@
       </div>
     </div>
   </footer>
-  <!-- Выпадающее сообщение о добавлении товара в корзину -->
   <section class="modal cart-added">
     <h3>Товар добавлен в корзину!</h3>
     <div class="btn-wrapper">
@@ -371,58 +364,29 @@
     </div>
     <button class="btn-close" aria-label="Закрыть окно"></button>
   </section>
-  <!-- закончил с сообщением -->
   <script>
     var buyLink = document.querySelectorAll(".buy-link");
     var buyPopup = document.querySelector(".cart-added");
     var buyClose = buyPopup.querySelector(".btn-close");
     var proceed = buyPopup.querySelector(".continue-btn");
 
-    buyLink[0].addEventListener("click", function (evt) {
-      evt.preventDefault();
-      buyPopup.classList.add("modal-show");
+    buyLink.forEach(function(el, index) {
+      el.addEventListener("click", function(evt) {
+        evt.preventDefault();
+        buyPopup.classList.add("modal-show");
+      })
     });
-    buyLink[1].addEventListener("click", function (evt) {
-      evt.preventDefault();
-      buyPopup.classList.add("modal-show");
-    });
-    buyLink[2].addEventListener("click", function (evt) {
-      evt.preventDefault();
-      buyPopup.classList.add("modal-show");
-    });
-    buyLink[3].addEventListener("click", function (evt) {
-      evt.preventDefault();
-      buyPopup.classList.add("modal-show");
-    });
-    buyLink[4].addEventListener("click", function (evt) {
-      evt.preventDefault();
-      buyPopup.classList.add("modal-show");
-    });
-    buyLink[5].addEventListener("click", function (evt) {
-      evt.preventDefault();
-      buyPopup.classList.add("modal-show");
-    });
-    buyLink[6].addEventListener("click", function (evt) {
-      evt.preventDefault();
-      buyPopup.classList.add("modal-show");
-    });
-    buyLink[7].addEventListener("click", function (evt) {
-      evt.preventDefault();
-      buyPopup.classList.add("modal-show");
-    });
-    buyLink[8].addEventListener("click", function (evt) {
-      evt.preventDefault();
-      buyPopup.classList.add("modal-show");
-    });
-
+    
     buyClose.addEventListener("click", function(evt) {
       evt.preventDefault();
       buyPopup.classList.remove("modal-show");
     });
+    
     proceed.addEventListener("click", function(evt) {
       evt.preventDefault();
       buyPopup.classList.remove("modal-show");
     });
   </script>
+  
 </body>
 </html>
