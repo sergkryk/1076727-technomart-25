@@ -10,6 +10,8 @@ var closemap = mappopup.querySelector(".btn-close");
 var sliders = document.querySelectorAll(".slider");
 var arrows = document.querySelectorAll(".slider-btn");
 var toggles = document.querySelectorAll(".slider-indicator");
+var options = document.querySelectorAll(".services-list-item");
+var cards = document.querySelectorAll(".services-items-description");
 
 form.addEventListener("submit", function (evt) {
   if (!login.value || !email.value) {
@@ -17,23 +19,17 @@ form.addEventListener("submit", function (evt) {
 
   }
   evt.preventDefault();
-  console.log(login.value);
-  console.log(email.value);
-  console.log("submitting");
 });
 
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.add("modal-show");
   login.focus();
-  console.log("btn is pressed");
-  console.log("login is focused");
 });
 
 close.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.remove("modal-show");
-  console.log("modal is closed");
 });
 
 map.addEventListener("click", function (evt) {
@@ -71,5 +67,16 @@ toggles.forEach(function (el, index) {
       toggles[index].classList.add("indicator-current");
     })
   })
-});
+})
 
+options.forEach(function (el, index) {
+  el.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    cards.forEach(function (el, index) {
+      cards[index].classList.add("visually-hidden");
+      options[index].classList.remove("active");
+    })
+    cards[index].classList.remove("visually-hidden");
+    options[index].classList.add("active");
+  })
+})
