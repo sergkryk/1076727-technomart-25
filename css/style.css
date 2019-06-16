@@ -237,9 +237,7 @@ a {
 
 .site-header h1 {
   width: 200px;
-  margin: 0;
-  margin-top: 4px;
-  padding: 0 53px 0 52px;
+  margin: 4px 52px 0 52px;
 
   font-size: 16px;
   font-style: italic;
@@ -340,7 +338,7 @@ a {
           box-sizing: border-box;
   margin-left: 10px;
   margin-top: 2px;
-  vertical-align: center;
+  vertical-align: middle;
 
   background-color: #ffffff;
   background-image: url(../img/icon-user.svg);
@@ -375,7 +373,7 @@ a {
   width: 43px;
   height: 42px;
   display: inline-block;
-  vertical-align: center;
+  vertical-align: middle;
   left: -43px;
   top: 3px;
   background: url(../img/icon-logout.svg) top 12px right 10px no-repeat;
@@ -465,7 +463,7 @@ a {
 }
 
 .main-nav-item a {
-  padding: 20px 30px;
+  padding: 20px 31px;
   display: block;
 
   font-size: 17px;
@@ -592,7 +590,7 @@ a {
   font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
   font-weight: 700;
-  padding-top: 21px;
+  padding-top: 20px;
 }
 
 .filter-range {
@@ -702,19 +700,12 @@ a {
 .filter-list {
   margin: 0;
   padding: 0;
-  margin-top: 10px;
+  margin-top: 9px;
+  margin-bottom: 3px;
 }
 
 .filter-border {
   border-bottom: 2px solid #f6f6f6;
-}
-
-.border-bottom {
-  border-bottom: 1px solid #eaeaea;
-  border-top: 1px solid #eaeaea;
-  padding-bottom: 5px;
-  padding-top: 17px;
-  margin-bottom: 18px;
 }
 
 .filter-list-item {
@@ -810,7 +801,7 @@ a {
 }
 
 .sort-menu-wrapper {
-  margin: 20px 0;
+  margin: 20px 0 20px 0;
   padding: 9px 0;
 
   background-color: #f7f3ec;
@@ -857,7 +848,7 @@ a {
   padding: 0;
   margin: 0;
   margin-left: 15px;
-  margin-right: 30px;
+  margin-right: 35px;
   list-style: none;
   min-width: 355px;
 
@@ -884,6 +875,7 @@ a {
 .sort-arrows-list {
   padding: 0;
   margin: 0;
+  margin-right: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -891,7 +883,7 @@ a {
   list-style: none;
 }
 
-.arrow button {
+.arrow a {
   padding-right: 30px;
   padding-top: 9px;
   border: none;
@@ -986,7 +978,7 @@ a {
 
 .catalog-item h3 {
   margin: 0;
-  padding-top: 8px;
+  padding-top: 7px;
   color: rgb(0, 0, 0);
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
@@ -1023,10 +1015,10 @@ a {
   line-height: 18px;
   font-weight: 700;
   width: 140px;
-  padding: 10px 0;
+  padding: 11px 2px 9px 0;
   margin: 0 auto 20px 43px;
 
-  background-image: url(../img/btn_red_arrow.png);
+  background-image: url(../img/btn-red-arrow.png);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1041,7 +1033,7 @@ a {
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-top: -5px;
+  margin-top: -1px;
   width: 100%;
 
   background-color: rgba(255, 255, 255, .8);
@@ -1057,7 +1049,7 @@ a {
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
-  vertical-align: center;
+  vertical-align: middle;
 
   background: rgb(99, 166, 52) url(../img/icon-cart-green.svg) 10px center no-repeat;
   -webkit-box-shadow: inset 0 -3px 0 0 rgb(54, 115, 21);
@@ -1078,7 +1070,7 @@ a {
   display: inline-block;
   margin: 0 auto 50px auto;
   padding: 12px 35px 12px 35px;
-  vertical-align: center;
+  vertical-align: middle;
 
   font-size: 14px;
   line-height: 18px;
@@ -1105,7 +1097,7 @@ a {
 }
 
 .page-navigation {
-  padding: 30px 0 60px 0;
+  padding: 31px 0 60px 0;
 }
 
 .page-number-list {
@@ -1123,7 +1115,6 @@ a {
 
 .page-number {
   margin: 0;
-  padding: 9px 14px 9px 15px;
   margin-right: 10px;
 
   font-family: "PT Sans", "Arial", sans-serif;
@@ -1134,6 +1125,11 @@ a {
 
   border: 1px solid #eaeaea;
   cursor: pointer;
+}
+
+.page-number-link {
+  padding: 9px 14px 9px 15px;
+  display: block;
 }
 
 .next-page {
@@ -1162,7 +1158,7 @@ a {
 .product-summary h4 {
   margin: 0;
   padding: 0;
-  padding-bottom: 24px;
+  padding-bottom: 26px;
 
   font-size: 30px;
   line-height: 30px;
@@ -1181,6 +1177,9 @@ a {
   color: #000000;
 }
 
+.wider-spacing {
+  letter-spacing: 0.14px;
+}
 /* section proposals */
 
 .proposals-list {
@@ -1224,7 +1223,7 @@ a {
   text-transform: uppercase;
   text-align: center;
   background-color: rgba(0, 0, 0, .1);
-  vertical-align: center;
+  vertical-align: middle;
 }
 
 .proposals-item a:hover {
@@ -1276,14 +1275,14 @@ a {
 }
 
 .slider-left {
-  margin-top: -20px;
+  margin-top: -8px;
   background-image: url(../img/icon-left.svg);
   top: 50%;
   left: 25px;
 }
 
 .slider-right {
-  margin-top: -20px;
+  margin-top: -8px;
   background-image: url(../img/icon-right.svg);
   top: 50%;
   right: 22px;
@@ -1313,7 +1312,7 @@ a {
 }
 
 .ad-card .ad-btn {
-  margin: 204px 25px 24px 25px;
+  margin: 207px 0 0 25px;
   min-width: 195px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1443,7 +1442,7 @@ a {
   display: inline-block;
   min-width: 216px;
   min-height: 141px;
-  vertical-align: center;
+  vertical-align: middle;
 
   display: -webkit-box;
 
@@ -1508,7 +1507,7 @@ a {
   line-height: 24px;
   color: #000000;
 
-  padding: 0 550px 0 0;
+  padding: 0 520px 0 0;
   margin: 0;
 }
 
@@ -1577,7 +1576,7 @@ a {
 }
 
 .services-container {
-  margin-top: 42px;
+  margin-top: 68px;
 
   display: -webkit-box;
 
@@ -1606,7 +1605,7 @@ a {
 /* section details */
 
 .details {
-  padding: 81px 10px 86px 10px;
+  padding: 79px 10px 84px 10px;
 }
 
 .details h3 {
@@ -1629,15 +1628,16 @@ a {
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
-  letter-spacing: 0;
 }
 
 .company-advert {
-  padding-right: 110px;
+  padding-right: 90px;
+  letter-spacing: 0.14px;
 }
 
 .company-delivery-options {
   padding-right: 190px;
+  letter-spacing: 0.03px;
 }
 
 .delivery-list {
@@ -1675,7 +1675,7 @@ a {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 2px;
-  vertical-align: center;
+  vertical-align: middle;
 
   color: #ffffff;
   font-size: 14px;
@@ -1774,16 +1774,19 @@ a {
 
 .footer-nav-item {
   list-style: none;
-  margin-top: 37px;
-  margin-right: 55px;
+  margin-top: 39px;
+  margin-left: 59px;
 }
 
-.footer-nav-item:nth-of-type(5) {
-  margin-right: 0;
+.footer-nav-item:first-of-type {
+  margin-left: 0;
+}
+.footer-nav-item:nth-child(6) {
+  margin-left: 0;
 }
 
-.footer-nav-item:nth-of-type(9) {
-  margin-right: 0;
+.gold-item {
+  margin-top: 34px;
 }
 
 .footer-nav-item a {
@@ -1834,6 +1837,7 @@ a {
   font-size: 16px;
   line-height: 18px;
   padding-right: 140px;
+  margin-right: 2px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 
@@ -1843,6 +1847,7 @@ a {
 .footer-bottom p {
   margin: 0;
   padding: 0;
+  letter-spacing: 0.14px;
 }
 
 .social-list {
@@ -2000,7 +2005,7 @@ a {
 .white-btn {
   padding: 12px 40px;
   display: inline-block;
-  vertical-align: center;
+  vertical-align: middle;
 
   color: #000000;
   font-size: 14px;
