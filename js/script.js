@@ -1,3 +1,8 @@
+var buyLink = document.querySelectorAll(".buy-link");
+var buyPopup = document.querySelector(".cart-added");
+var buyClose = buyPopup.querySelector(".btn-close");
+var proceed = buyPopup.querySelector(".continue-btn");
+
 var link = document.querySelector(".contact-btn");
 var popup = document.querySelector(".support-modal");
 var close = popup.querySelector(".btn-close");
@@ -91,7 +96,7 @@ toggles.forEach(function (el, index) {
       toggles[index].classList.add("indicator-current");
     })
   })
-})
+});
 
 options.forEach(function (el, index) {
   el.addEventListener("click", function (evt) {
@@ -103,4 +108,21 @@ options.forEach(function (el, index) {
     cards[index].classList.remove("visually-hidden");
     options[index].classList.add("active");
   })
-})
+});
+
+buyLink.forEach(function (el, index) {
+  el.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    buyPopup.classList.add("modal-show");
+  })
+});
+
+buyClose.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  buyPopup.classList.remove("modal-show");
+});
+
+proceed.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  buyPopup.classList.remove("modal-show");
+});
