@@ -4,27 +4,37 @@ var close = popup.querySelector(".btn-close");
 var login = popup.querySelector("[name=login]");
 var email = popup.querySelector("[name=email]");
 var form = popup.querySelector(".feedback-form");
+
 var map = document.querySelector(".map-popup");
 var mappopup = document.querySelector(".map-pop-up");
 var closemap = mappopup.querySelector(".btn-close");
+
 var sliders = document.querySelectorAll(".slider");
 var arrows = document.querySelectorAll(".slider-btn");
 var toggles = document.querySelectorAll(".slider-indicator");
+
 var options = document.querySelectorAll(".services-list-item");
 var cards = document.querySelectorAll(".services-items-description");
 
-form.addEventListener("submit", function (evt) {
-  if (!login.value || !email.value) {
-    evt.preventDefault();
+var isStorageSupport = true;
+var storage = "";
 
-  }
-  evt.preventDefault();
-});
+try {
+  storage = localStorage.getItem("login");
+} catch (err) {
+  isStorageSupport = false;
+}
 
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.add("modal-show");
-  login.focus();
+  
+  if (storage) {
+    login.value = storage;
+    password.focus();
+  } else {
+    login.focus();
+  }
 });
 
 close.addEventListener("click", function (evt) {
@@ -32,6 +42,20 @@ close.addEventListener("click", function (evt) {
   popup.classList.remove("modal-show");
 });
 
+form.addEventListener("submit", function (evt) {
+  if (!login.value || !email.value) {
+    evt.preventDefault();
+    console.log("login or email required");
+    popup.classList.remove("modal-error");
+    popup.offsetWidth = popup.offsetWidth;
+    popup.classList.add("modal-error");
+  } else {
+    if (isStorageSupport) {
+      localStorage.setItem("login", login.value);
+    }
+  }
+});
+    
 map.addEventListener("click", function (evt) {
   evt.preventDefault();
   mappopup.classList.add("modal-show");

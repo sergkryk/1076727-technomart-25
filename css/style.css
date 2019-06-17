@@ -137,7 +137,7 @@ a {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-align: center;
-  padding: 11px 10px 10px 30px;
+  padding: 12px 10px 14px 27px;
 }
 
 .bookmarks {
@@ -223,7 +223,7 @@ a {
 }
 
 .about .content-container {
-  padding: 44px 10px 40px 10px;
+  padding: 44px 10px 39px 10px;
 
   display: -webkit-box;
 
@@ -572,7 +572,7 @@ a {
   color: rgba(0, 0, 0, .3);
 
   margin: 20px 0 13px 0;
-  padding: 9px 0 9px 18px;
+  padding: 11px 0 9px 18px;
 
   background-color: #f7f3ec;
 }
@@ -590,7 +590,7 @@ a {
   font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
   font-weight: 700;
-  padding-top: 20px;
+  padding-top: 18px;
 }
 
 .filter-range {
@@ -635,7 +635,7 @@ a {
 }
 
 .range-toggle-max {
-  left: 150px;
+  left: 160px;
 }
 
 .filter-range-title {
@@ -709,6 +709,7 @@ a {
 }
 
 .filter-list-item {
+  margin-top: 10px;
   margin-bottom: 17px;
   list-style: none;
   position: relative;
@@ -775,7 +776,7 @@ a {
 
 .filter-list-item label {
   display: block;
-  padding: 3px 0 0 35px;
+  padding: 3px 0 0 34px;
 
   color: rgb(0, 0, 0);
   font-size: 15px;
@@ -797,12 +798,12 @@ a {
   font-weight: 400;
 
   padding: 10px 38px;
-  margin: 60px 0 0 0;
+  margin: 61px 0 0 0;
 }
 
 .sort-menu-wrapper {
   margin: 20px 0 20px 0;
-  padding: 9px 0;
+  padding: 11px 0 9px 0;
 
   background-color: #f7f3ec;
   display: -webkit-box;
@@ -813,7 +814,7 @@ a {
 .sort-menu-wrapper p {
   margin: 0;
   margin-right: auto;
-  padding-left: 20px;
+  padding-left: 18px;
 
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
@@ -978,7 +979,7 @@ a {
 
 .catalog-item h3 {
   margin: 0;
-  padding-top: 7px;
+  padding-top: 6px;
   color: rgb(0, 0, 0);
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
@@ -1097,7 +1098,7 @@ a {
 }
 
 .page-navigation {
-  padding: 31px 0 60px 0;
+  padding: 33px 0 60px 0;
 }
 
 .page-number-list {
@@ -1322,6 +1323,7 @@ a {
 
 .slider-indicator {
   position: absolute;
+  padding: 0;
   width: 12px;
   height: 12px;
   background-color: #ffffff;
@@ -1332,14 +1334,14 @@ a {
 }
 
 .indicator-one {
-  left: 295px;
-  bottom: 35px;
+  left: 293px;
+  bottom: 12px;
 
 }
 
 .indicator-two {
-  left: 315px;
-  bottom: 35px;
+  left: 314px;
+  bottom: 12px;
 }
 
 .indicator-current {
@@ -1371,7 +1373,7 @@ a {
 
 .heading {
   padding: 25px;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
   background-color: #f9f5f0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1431,7 +1433,7 @@ a {
 .brand-card-list li {
   margin-right: 20px;
   margin-bottom: 20px;
-  border: 2px solid #f9f5f0;
+  border: 1px solid #f9f5f0;
 }
 
 .brand-card-list li:nth-child(4n) {
@@ -1440,8 +1442,8 @@ a {
 
 .brand-link {
   display: inline-block;
-  min-width: 216px;
-  min-height: 141px;
+  min-width: 218px;
+  min-height: 143px;
   vertical-align: middle;
 
   display: -webkit-box;
@@ -1486,7 +1488,7 @@ a {
 
   margin: 0;
   padding: 0;
-  margin-bottom: 27px;
+  margin-bottom: 25px;
 }
 
 .services h3 {
@@ -1497,7 +1499,7 @@ a {
   font-weight: 400;
 
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 23px;
   padding: 0;
 }
 
@@ -1530,7 +1532,7 @@ a {
 }
 
 .services-list-item button {
-  padding: 15px 22px;
+  padding: 14px 22px 16px 22px;
   min-width: 240px;
   text-align: left;
 
@@ -1576,7 +1578,7 @@ a {
 }
 
 .services-container {
-  margin-top: 68px;
+  margin-top: 69px;
 
   display: -webkit-box;
 
@@ -1641,7 +1643,7 @@ a {
 }
 
 .delivery-list {
-  margin: -4px 0 36px 0;
+  margin: -4px 0 37px 0;
   padding: 0;
 }
 
@@ -1700,13 +1702,14 @@ a {
 
 .map-link {
   display: block;
-  margin-bottom: 37px;
-  margin-top: 5px;
+  max-height: 160px;
+  margin-bottom: 39px;
   background-color: #efece7;
 }
 
 .company-contacts p {
   padding-right: 90px;
+  margin-bottom: 30px;
 }
 
 .company-contacts .red-btn {
@@ -1719,6 +1722,7 @@ a {
 /* footer */
 
 .site-footer {
+  margin-top: 2px;
   background-color: rgb(50, 66, 92);
 }
 
@@ -1739,7 +1743,7 @@ a {
 
 .address-wrapper p {
   margin: 0;
-  padding-top: 32px;
+  padding-top: 31px;
   padding-left: 3px;
 }
 
@@ -1774,7 +1778,7 @@ a {
 
 .footer-nav-item {
   list-style: none;
-  margin-top: 39px;
+  margin-top: 37px;
   margin-left: 59px;
 }
 
@@ -1853,7 +1857,7 @@ a {
 .social-list {
   width: 240px;
   margin: 0;
-  margin-right: 10px;
+  margin-right: 15px;
   padding: 0;
 
   display: -webkit-box;
@@ -1878,6 +1882,7 @@ a {
 
 .developer {
   width: 115px;
+  margin-right: -2px;
 }
 
 .social-item:hover,
@@ -2144,4 +2149,50 @@ a {
 
 .modal-show {
   display: block;
+  animation: bounce 0.6s;
 }
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
